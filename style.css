@@ -1,0 +1,102 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+nav 
+{
+  background-color: coral;
+  width: 100%;
+  height: 70px;
+}
+nav .logo
+{
+ 
+  float: left;
+  text-transform: uppercase;
+      text-decoration: none;
+  line-height: 70px;
+  font-size: 20px;
+}
+
+nav ul 
+{
+  
+  float: right;
+}
+
+nav ul li 
+{
+ 
+  list-style: none;
+  display: inline-block;
+ 
+}
+
+nav ul li a
+{
+    
+padding: 5px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+nav ul li a:hover
+{
+  background-color: #FFEBCD;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.btn {
+  display: none;
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  float: right;
+  margin-top: 13px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+  
+}
+
+
+
+@media only screen and (max-width:700px) 
+  
+{
+nav ul
+  {
+    background-color: coral;
+    text-align: left;
+    display: none;
+    
+    width: 100%;
+  }
+  
+ .btn
+  {
+    display: block;
+  }
+
+  nav ul li 
+  {
+    display:block ;
+  }
+}
+//////********
+$(".btn").click(function(){
+    $("ul").toggle();
+});
+******///////
+ 
+
+
+
